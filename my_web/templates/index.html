@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neha R</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" width="20" height="20" href="{% static 'css/style.css' %}" >
+    <style>
+    .navoption{
+        font-size:2em;
+        color:black;
+        margin:2em;
+    }
+    .navoption:hover{
+        color:orange;
+    }
+    </style>
+
+</head>
+<body>
+
+    <header>
+
+      
+    <div style="width:100%; position:fixed; background:white;">
+        <nav class="navbar">
+            <a href="#home"><span class="navoption">Home</span></a>
+            <a href="#about"><span class="navoption">About</span></a>
+            <a href="#contact"><span class="navoption">Contact</span></a>
+        </nav>
+        </div>
+    
+    
+    </header>
+
+<section class="home" id="home">
+
+    <div class="content">
+        <span class="hi"> hi there... </span>
+        <h3> i am <span> Neha R </span> </h3>
+        <p class="info"> i am a software developer </p>
+        <p class="text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quidem excepturi natus iste ut. Alias, quod? Earum pariatur obcaecati dolorum! </p>
+        <a href="#about" class="btn">about me</a>
+    </div>
+
+    <div class="image">
+        <img src={% static "images/img.jpg" %}>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+<h1 class="heading"> about <span> me </span> </h1>
+
+<div class="row-1">
+
+
+
+    <div class="content">
+        <h3> my name is Neha R & i am a software developer </h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi error molestias impedit officia! Exercitationem dignissimos esse eos quas nisi impedit delectus, voluptate ullam iste nostrum at. Dolor culpa eaque omnis.</p>
+
+      
+
+</div>
+
+
+
+</section>
+
+<!-- about section ends -->
+
+
+
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> contact <span> me </span> </h1>
+
+    <div class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-envelope"></i>
+            <h3>my email</h3>
+            <p>rpneha11@gmail.com</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-phone"></i>
+            <h3>my number</h3>
+            <p>+91 9633077412</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>my address</h3>
+            <p>Parambil, uralloor, kozhikode, Kerala - 673620</p>
+        </div>
+
+    </div>
+
+   
+    <div class="follow">
+        <a href="https://github.com/neha-raghavan" class="fab fa-github"></a>
+        <a href="https://www.linkedin.com/in/neha-r-51345213a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWETnQj5hSCyeUdtQAbxaWA%3D%3D" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-instagram"></a>
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+</body>
+</html>
